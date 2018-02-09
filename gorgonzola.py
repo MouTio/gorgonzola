@@ -7,7 +7,8 @@ import re
 NEW_DAY = '<p>'
 NEW_LINE = '<br />'
 
-today = (datetime.date.today()-datetime.timedelta(days = 4)).strftime('%d/%m/%Y')
+# today = (datetime.date.today()-datetime.timedelta(days = 4)).strftime('%d/%m/%Y')
+today = datetime.date.today().strftime('%d/%m/%Y')
 print 'Hoy es día =', today
 
 portamivia_web = urllib2.urlopen("https://www.facebook.com/PORTAMI-VIA-128458703849924/").read()  # portamivia_web
